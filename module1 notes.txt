@@ -1,0 +1,65 @@
+udemy AI course notes
+
+-n8n is low-code tool that integrates AI agent with anything using drag-and-drop interface
+-rest of the course covers building n8n-like tools
+
+Course organized:
+theory, frameworks, projects
+6 modules:
+	1. foundations
+	2. OpenAI Agents SDK
+	3. CrewAI
+	4. LangGraph
+	5. Microsoft AutoGen
+	6. MCP (Model-Context-Protocol) from Anthropic -- open source way that different models can connect
+	
+Python:
+execute python script using `python3 script.py`
+or using nodemon: `nodemon --exec python3 hello.py`
+
+Cursor install:
+https://scottspence.com/posts/cursor-setup-for-wsl
+
+```
+➜  ~ echo -e '\n# Cursor \nexport PATH="$PATH:/mnt/c/Users/whube/AppData/Local/Programs/cursor/resources/app/bin"' >> ~/.zshrc
+➜  ~ source ~/.zshrc
+➜  ~ /mnt/c/Users/whube/AppData/Local/Programs/cursor/resources/app/bin/cursor
+Installing Cursor Server for commit 53b99ce608cba35127ae3a050c1738a959750860
+Cleaning up old installations...
+Downloading Cursor Server for x64 (53b99ce608cba35127ae3a050c1738a959750860)
+--2025-06-05 16:09:37--  https://cursor.blob.core.windows.net/remote-releases/53b99ce608cba35127ae3a050c1738a959750860/vscode-reh-linux-x64.tar.gz
+Resolving cursor.blob.core.windows.net (cursor.blob.core.windows.net)... 20.209.35.129
+Connecting to cursor.blob.core.windows.net (cursor.blob.core.windows.net)|20.209.35.129|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 68394992 (65M) [application/x-tar]
+Saving to: ‘/home/hubenschmidt/.cursor-server/bin/53b99ce608cba35127ae3a050c1738a959750860-1749154177146240933.tar.gz’
+
+/home/hubenschmidt/.cursor-se 100%[=================================================>]  65.23M  6.05MB/s    in 12s
+
+2025-06-05 16:09:49 (5.55 MB/s) - ‘/home/hubenschmidt/.cursor-server/bin/53b99ce608cba35127ae3a050c1738a959750860-1749154177146240933.tar.gz’ saved [68394992/68394992]
+
+Verifying tar file integrity...
+Extracting files...
+Moving to final location...
+Installation complete.
+➜  ~ ls
+ agenticAiEngineeringCourse                 golearn              leetcode
+ cumulus-iot                                helios               microsoft-prod.list
+'cumulus-web-develop@0de2e883f35 (2).zip'   helios-iot           microsoft.gpg
+ discogs-player-2024                        https.pfx            moduleTwin.json
+ dotnet-install.sh                          interview-practice   openssl-1.0.2j-fips-x86_64
+ generator-azure-iot-edge-module            iotedge
+ go                                         jenny_jen
+➜  ~ cd agenticAiEngineeringCourse
+➜  agenticAiEngineeringCourse cursor .
+```
+
+UV (python package manager) install: https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
+
+fast installer with uv: 
+```
+cd agenticAIEngineeringCourse/agents
+uv sync
+```
+
+execute script: `uv run script.py`
